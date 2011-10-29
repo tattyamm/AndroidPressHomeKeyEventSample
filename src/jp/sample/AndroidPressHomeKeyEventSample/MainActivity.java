@@ -15,7 +15,7 @@ public class MainActivity extends Activity {
 	
 	@Override
 	public void onUserLeaveHint(){
-		//Activityが切り替わるタイミングで呼ばれる
+		//Activityが切り替わるタイミングで呼ばれる。
 		Toast.makeText(getApplicationContext(), "Good bye!" , Toast.LENGTH_SHORT).show();
 	}
 	
@@ -23,7 +23,7 @@ public class MainActivity extends Activity {
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		switch(keyCode){
 		case KeyEvent.KEYCODE_BACK:
-			//戻るボタンが押された時の処理
+			//戻るボタンが押された時の処理。
 			Toast.makeText(this, "Back button!" , Toast.LENGTH_SHORT).show();
 			finish();
 			return true;
